@@ -157,6 +157,14 @@ img{
     padding-bottom: 32px;
 }
 
+.icon-mail,
+.icon-tel {
+    margin-right: 10px;
+    cursor: pointer;
+    fill: currentColor;
+}
+
+
 .header-item+.header-item {
     margin-left: 50px;
 }
@@ -187,12 +195,15 @@ img{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
+    align-items: center;
+    display: flex;
 }
 
 
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* Герой */
@@ -266,6 +277,17 @@ img{
 
 .feature-list{
     display: flex;
+}
+
+.feature-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: rgba(245, 244, 250, 1);
+    border-radius: 4px;
 }
 
 .feature-list li{
@@ -342,12 +364,41 @@ img{
     border-radius: 0px 0px 4px 4px;
 }
 
+.social-link{
+    fill: #AFB1B8;
+}
+
+.link-area:hover .social-link,
+.link-area:focus .social-link {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
+}
+
+.link-area:hover,
+.link-area:focus {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
+}
+
+.link-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+
+
 .team-box{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
+    width: 270px;
+    height: 168px;
 }
 
 .team .team-name{
@@ -371,6 +422,14 @@ img{
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: 16px;
 }
  
 /* Футер */
